@@ -1,0 +1,182 @@
+\documentclass[12pt]{article}
+\usepackage{preamble}
+\usepackage{longtable}
+
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2cm, bottom=2.5cm}
+
+\pagestyle{plain}
+
+\newcommand{\placeholder}[1]{{\color{magenta}#1}}
+
+\chead{
+    \begin{minipage}{1\linewidth}
+        \begin{wrapfigure}{r}{0pt}
+            \includegraphics[height=1cm]{images/logo}
+        \end{wrapfigure}
+        {
+            \centering
+            \sffamily\scriptsize
+            \textbf{
+                Санкт-Петербургский национальный исследовательский университет \\
+                информационных технологий, механики и оптики}
+            %th3p4g
+            \vspace{2mm}
+
+            \quad\quad\quad\quad\quad\quad\ \textbf{УЧЕБНЫЙ ЦЕНТР ОБЩЕЙ ФИЗИКИ ФТФ}
+        }
+    \end{minipage}
+}
+
+
+
+\begin{document}
+    \vspace*{2\baselineskip}
+
+    \thispagestyle{fancy}
+
+    \noindent
+    \textbf{Группа} \underline{\hspace{4.85cm}} \hfill \textbf{К работе допущен} \underline{\hspace{4cm}} \\[0.5cm]
+    \textbf{Студент} \underline{\hspace{4.6cm}} \hfill \textbf{Работа выполнена} \underline{\hspace{4cm}} \\[0.5cm]
+    \textbf{Преподаватель} \underline{\hspace{3.2cm}} \hfill \textbf{Отчет принят} \underline{\hspace{4.85cm}} \\
+
+
+    \begin{center}
+    {\huge \textbf{Рабочий протокол и отчёт по\\ лабораторной работе № \placeholder{X.YZ}}}
+
+        \smallvspace
+
+        {\Large \placeholder{Название лабораторной работы}}
+    \end{center}
+
+
+    \noindent
+    1. \textbf{Цель работы.}
+
+    \begin{enumerate}
+        \item \placeholder{Цель №1}
+
+        \item \placeholder{Цель №N}
+    \end{enumerate}
+
+    \mediumvspace
+
+    \noindent
+    2. \textbf{Задачи, решаемые при выполнении работы.}
+
+    \begin{enumerate}
+        \item \placeholder{Задача №1}
+
+        \item \placeholder{Задача №2}
+
+        \item \placeholder{Задача №N}
+    \end{enumerate}
+
+    \mediumvspace
+
+    \noindent
+    3. \textbf{Объект исследования.}
+
+    \placeholder{Объект исследования}
+
+    \mediumvspace
+
+    \noindent
+    4. \textbf{Метод экспериментального исследования.}
+
+    \placeholder{Метод исследования}
+
+    \mediumvspace
+
+    \noindent
+    5. \textbf{Рабочие формулы и исходные данные.}
+
+    \input{formulas}
+
+    \mediumvspace
+
+    \clearpage
+
+    \noindent
+    6. \textbf{Измерительные приборы.}
+
+    \smallvspace
+
+    \input{table1}
+
+    \mediumvspace
+
+    7. \textbf{Схема установки. (перечень схем, которые составляют Приложение 1).}
+
+    \hyperlink{schema1}{Схема установки} прилагается в Приложении 1
+
+    \mediumvspace
+
+    8. \textbf{Результаты прямых измерений и их обработки (таблицы, примеры расчетов).}
+
+    \input{08_measure_results}
+
+    \mediumvspace
+
+    9. \textbf{Расчет результатов косвенных измерений (таблицы, примеры расчетов).}
+
+    \input{09_calculation_results}
+
+    \mediumvspace
+
+    10. \textbf{Расчёт погрешности измерений.}
+
+    \mediumvspace
+
+    11. \textbf{Графики (перечень графиков, которые составляют Приложение 3).}
+
+    \hyperlink{diagram1}{График 1} прилагаются в Приложении 3
+
+    \mediumvspace
+
+    12. \textbf{Окончательные результаты.}
+
+    \input{12_final_results}
+
+    \mediumvspace
+
+    13. \textbf{Выводы и анализ результатов работы.}
+
+    \input{13_summary}
+
+    \clearpage
+
+    \begin{center}
+        \LARGE
+        \textbf{Приложение 1. Схема установки}
+    \end{center}
+
+    \mediumvspace
+
+    \input{schema1}
+
+    \clearpage
+
+    \begin{center}
+        \LARGE
+        \textbf{Приложение 2. Таблицы измерений и расчётов}
+    \end{center}
+
+    \mediumvspace
+
+    \input{table2}
+
+    \input{table3}
+
+    \clearpage
+
+    \begin{center}
+        \LARGE
+        \textbf{Приложение 3. Графики}
+    \end{center}
+
+    \mediumvspace
+
+    \input{diagram1}
+
+
+\end{document}
